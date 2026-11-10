@@ -1,0 +1,17 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#151225"><title>Troll Master</title><link rel="manifest" href="/manifest.webmanifest"><link rel="stylesheet" href="/style.css"></head>
+<body><main class="shell"><header><div class="logo">🎭</div><div><h1>TROLL MASTER</h1><p>Fábrica de pegadinhas</p></div></header>
+<section class="panel"><h2>Monte sua trollagem</h2><p class="muted">Crie uma sequência divertida e compartilhe o link.</p>
+<form id="creator">
+<label>Nome da pegadinha<input name="title" maxlength="60" placeholder="Ex.: Central de memes" value="Central de memes"></label>
+<div class="grid"><label>Intensidade<select name="intensity"><option value="leve">Leve</option><option value="media" selected>Média</option><option value="forte">Forte</option><option value="insana">Insana</option></select></label>
+<label>Duração<select name="duration"><option value="30">30 segundos</option><option value="60" selected>1 minuto</option><option value="120">2 minutos</option><option value="300">5 minutos</option><option value="600">10 minutos</option></select></label></div>
+<label>Palavra mágica para encerrar<input name="secret" maxlength="30" value="LIBERDADE" placeholder="Ex.: ABACAXI"></label>
+<label>Mostrar a palavra mágica depois de<select name="revealAfter"><option value="15">15 segundos</option><option value="30" selected>30 segundos</option><option value="60">1 minuto</option><option value="120">2 minutos</option><option value="300">5 minutos</option></select></label>
+<label>Link de uma página pública (opcional)<input id="sourceUrl" type="url" placeholder="https://exemplo.com/produto"></label>
+<div class="importActions"><button id="importLink" type="button">🔎 Buscar conteúdo do link</button><span id="importStatus" class="hint">Importa título, descrição, imagem e vídeo quando o site disponibilizar metadados públicos.</span></div>
+<div id="importPreview" class="importPreview" hidden></div>
+<label>Fotos e vídeos (até 12 arquivos)<input name="media" type="file" accept="image/*,video/mp4,video/webm" multiple></label>
+<p class="hint">Dica: use vídeos MP4/WebM e imagens JPG, PNG, GIF ou WebP. Máximo de 50 MB por arquivo.</p>
+<button class="primary" type="submit">✨ Criar link da pegadinha</button></form>
+<div id="result" class="result" hidden><h3>Seu link está pronto!</h3><input id="shareUrl" readonly><div class="grid"><button id="copy" type="button">Copiar link</button><button id="whatsapp" type="button" class="whats">Enviar no WhatsApp</button></div></div>
+</section><footer>Brincadeira com consentimento: a página sempre oferece saída imediata. Não bloqueia o aparelho nem abre anúncios fora dela.</footer></main><script src="/app.js"></script></body></html>

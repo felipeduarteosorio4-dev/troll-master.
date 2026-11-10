@@ -1,0 +1,8 @@
+{
+  "appId": "br.com.trollmaster.app",
+  "appName": "Troll Master",
+  "webDir": "public",
+  "server": {
+    "androidScheme": "https"
+  }
+}

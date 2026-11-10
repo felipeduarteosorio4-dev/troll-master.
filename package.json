@@ -1,0 +1,19 @@
+{
+  "name": "troll-master",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.2",
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}

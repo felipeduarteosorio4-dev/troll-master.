@@ -1,0 +1,9 @@
+{
+  "name": "Troll Master",
+  "short_name": "Troll Master",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#100e1b",
+  "theme_color": "#151225",
+  "icons": []
+}
